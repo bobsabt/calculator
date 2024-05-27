@@ -1,4 +1,4 @@
-Homepage: https://bobsabt/github.io/calculator/
+Homepage: https://bobsabt.github.io/calculator/
 
 ## This is my basic calculator project
 It can execute the basic operations. <br/>
