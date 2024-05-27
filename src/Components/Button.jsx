@@ -1,11 +1,8 @@
+import PropTypes from 'prop-types';
 
-const Button = ({ label }) => {
+const Button = ({ label, onClickHandler }) => {
 
     const myLabel = label;
-
-    const onClickHandler = (label)=>{
-        console.log(label)
-    }
 
     return (
         <>
@@ -13,5 +10,13 @@ const Button = ({ label }) => {
         </>
     );
 };
+
+Button.propTypes = {
+    label: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]), 
+    onClickHandler: PropTypes.func, 
+  };
 
 export default Button;
