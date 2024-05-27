@@ -10,7 +10,6 @@ const Screen = ({ value }) => {
     );
 };
 
-// Define prop types
 Screen.propTypes = {
     value: PropTypes.oneOfType([
         PropTypes.string,
