@@ -161,7 +161,7 @@ const Calculator = () => {
         <div className="calculator-container">
             <Screen value={formatDisplay(currentNumber).substring(0,11)}/>
             <div className='buttons-container'>
-                <OperatorButtons />  
+                <OperatorButtons onClickHandler={setCurrentOperatorValue} />  
                 <NumberButtons onClickHandler={setNumberValue}/>
             </div>    
         </div>
